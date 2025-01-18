@@ -11,6 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="manifest" href="manifest.json">
 </head>
 <bod>
   <!-- ========== Start NAVBAR Section ========== -->
@@ -174,6 +175,18 @@
   </footer>
 
   <!-- ========== End   FOOTER Section ========== -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch(error => {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    }
+  </script>
 </bod>
 
 </html>
