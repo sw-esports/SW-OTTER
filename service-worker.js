@@ -2,10 +2,6 @@ const CACHE_NAME = 'sw-otter-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/about.html',
-  '/service.html',
-  '/blog.html',
-  '/contact.html',
   '/css/style.css',
   '/images/logo.png',
   // Add other assets you want to cache
