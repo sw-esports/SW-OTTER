@@ -2,129 +2,125 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chart js</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/graph.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWOTTER </title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/graph.css">
 </head>
+
 <body>
-    <header class="section-navbar">
-        <div class="container">
-          <div class="navbar-brand">
-            <a href="index.html">
-              <img
-                src="./images/logo.png"
-                alt="my SW-OTTER logo"
-                width="80%"
-                height="auto"
-              />
-            </a>
-          </div>
-          <nav class="navbar">
-            <ul>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"> home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> about </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html"> services </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html"> blog </a>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link" href="contact.html"> contact </a> -->
-                <!-- section-contact--homepage -->
-                <a class="nav-link" href="#section-contact--homepage"> contact </a>
-  
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-   <div class="main">
+  <header class="section-navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="my SW-OTTER logo" width="80%" height="auto" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"> about </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html"> services </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html"> blog </a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="contact.html"> contact </a> -->
+            <!-- section-contact--homepage -->
+            <a class="nav-link" href="#section-contact--homepage"> contact </a>
+
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="main">
     <div class="upper graph-container">
-        <h1>ENTER DATA</h1>
-        <div class="form">
-            <div class="field">
-                <label for="ChartType">Choose Type : </label>
-               <select name="chartType" id="chartType">
-                <option value="bar">Bar</option>
-                <option value="bubble">bubble</option>
-                <option value="pie">Pie</option>
-                <option value="doughnut">doughnut</option>
-                <option value="line">Line</option>
-                <option value="polarArea">Polar Area</option>
-                <option value="radar">Radar</option>
-                <option value="scatter">scatter</option>
-               </select>
-            </div>
-            <div class="field theme-selector">
-                <label for="theme">Choose Theme : </label>
-                <select name="theme" id="theme">
-                <option value="theme1">theme1</option>
-                <option value="theme2">theme2</option>
-                <option value="theme3">theme3</option>
-                <option value="theme4">theme4</option>
-                <option value="theme5">theme5</option>
-                <option value="theme6">theme6</option>
-                <option value="theme7">theme7</option>
-                <option value="theme8">theme8</option>
-                <option value="theme9">theme9</option>
-                <option value="theme10">theme10</option>
+      <h1>ENTER DATA</h1>
+      <div class="form">
+        <div class="field">
+          <label for="ChartType">Choose Type : </label>
+          <select name="chartType" id="chartType">
+            <option value="bar">Bar</option>
+            <option value="bubble">bubble</option>
+            <option value="pie">Pie</option>
+            <option value="doughnut">doughnut</option>
+            <option value="line">Line</option>
+            <option value="polarArea">Polar Area</option>
+            <option value="radar">Radar</option>
+            <option value="scatter">scatter</option>
+          </select>
+        </div>
+        <div class="field theme-selector">
+          <label for="theme">Choose Theme : </label>
+          <select name="theme" id="theme">
+            <option value="theme1">theme1</option>
+            <option value="theme2">theme2</option>
+            <option value="theme3">theme3</option>
+            <option value="theme4">theme4</option>
+            <option value="theme5">theme5</option>
+            <option value="theme6">theme6</option>
+            <option value="theme7">theme7</option>
+            <option value="theme8">theme8</option>
+            <option value="theme9">theme9</option>
+            <option value="theme10">theme10</option>
 
 
-                </select>
-            </div>
+          </select>
         </div>
-        <div class="data-table-graph-container">
-            <table class="data-table" id="dataTable">
-                <thead>
-                    <tr>
-                        <th>Label</th>
-                        <th>Value</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td contenteditable="true">Red</td>
-                        <td contenteditable="true">12</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true">Blue</td>
-                        <td contenteditable="true">19</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true">Yellow</td>
-                        <td contenteditable="true">3</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true">Green</td>
-                        <td contenteditable="true">5</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true">Purple</td>
-                        <td contenteditable="true">2</td>
-                    </tr>
-                    <tr>
-                        <td contenteditable="true">Orange</td>
-                        <td contenteditable="true">3</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button class="add-row-btn" id="addRowBtn">Add Row</button>
-            <button class="download-btn" id="downloadBtn">Download Graph</button>
-        </div>
+      </div>
+      <div class="data-table-graph-container">
+        <table class="data-table" id="dataTable">
+          <thead>
+            <tr>
+              <th>Label</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td contenteditable="true">Red</td>
+              <td contenteditable="true">12</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">Blue</td>
+              <td contenteditable="true">19</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">Yellow</td>
+              <td contenteditable="true">3</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">Green</td>
+              <td contenteditable="true">5</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">Purple</td>
+              <td contenteditable="true">2</td>
+            </tr>
+            <tr>
+              <td contenteditable="true">Orange</td>
+              <td contenteditable="true">3</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="add-row-btn" id="addRowBtn">Add Row</button>
+        <button class="download-btn" id="downloadBtn">Download Graph</button>
+      </div>
     </div>
     <div class="lower graph-container">
-        <canvas id="myChart"></canvas>
+      <canvas id="myChart"></canvas>
     </div>
-   </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="/js/script.js"></script>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
