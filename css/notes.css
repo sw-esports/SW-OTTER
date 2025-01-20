@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #efeeee;
+  color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: large;
+}
+.main {
+  width: 85vw;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+}
+.right,
+.left {
+  width: 45%;
+  height: 100%;
+  min-width: 85vmin;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px #ffffffa9 , inset 1px 1px 10px 0px #212121a9 ;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+  
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+h1 {
+  text-align: center;
+  color: rgb(42, 42, 42);
+}
+.list {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 80px;
+  cursor: grab;
+  padding: 10px;
+  text-wrap: wrap;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.list.dragging {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+.list.adding {
+  animation: fadeIn 0.5s ease;
+}
+
+.list.deleting {
+  animation: fadeOut 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.left > .list {
+  background-color: #539ffb;
+  box-shadow: #539ffb 2px 2px 10px;
+}
+.right> .list {
+    background-color: #53fb7d;
+    box-shadow: #53fb96 2px 2px 10px;
+    color: black;
+  }
+p{
+  margin-bottom:10px;
+}
+.controls{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+  button > img{
+    width:20px;
+   
+
+  }
+  button{
+    padding: 4px 5px;
+    border-radius: 5px;
+    border: none;
+   
+
+    cursor: pointer;
+    border: none;
+  }
+  button:hover{
+    opacity: 1;
+  }
+  .del-btn{
+    opacity: 0;
+    background-color: #f82626;
+    box-shadow: #f82626 1px 1px 5px;
+  
+
+  }
+  .add-btn{
+    opacity: 0;
+    width: 30px;
+    background-color: #26f834;
+    box-shadow: #26f842 1px 1px 5px;
+  
+
+  }
+@media (max-width: 768px) {
+  .main {
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right,
+  .left {
+    width: 90%;
+    height: 90%;
+  }
+}
