@@ -7,6 +7,42 @@
   <title>SWOTTER </title>
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/graph.css">
+  <style>
+    .delete-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    .delete-btn:hover {
+      background-color: #cc0000;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .delete-row-btn {
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 15px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .delete-row-btn:hover {
+      background-color: #cc0000;
+    }
+  </style>
 </head>
 
 <body>
@@ -86,40 +122,27 @@
           </thead>
           <tbody>
             <tr>
-              <td contenteditable="true">Red</td>
+              <td contenteditable="true">हाँ</td>
               <td contenteditable="true">12</td>
             </tr>
-            <tr>
-              <td contenteditable="true">Blue</td>
-              <td contenteditable="true">19</td>
-            </tr>
-            <tr>
-              <td contenteditable="true">Yellow</td>
-              <td contenteditable="true">3</td>
-            </tr>
-            <tr>
-              <td contenteditable="true">Green</td>
-              <td contenteditable="true">5</td>
-            </tr>
-            <tr>
-              <td contenteditable="true">Purple</td>
-              <td contenteditable="true">2</td>
-            </tr>
-            <tr>
-              <td contenteditable="true">Orange</td>
-              <td contenteditable="true">3</td>
-            </tr>
+
+
           </tbody>
         </table>
-        <button class="add-row-btn" id="addRowBtn">Add Row</button>
-        <button class="download-btn" id="downloadBtn">Download Graph</button>
+        <div class="button-container">
+          <button class="add-row-btn" id="addRowBtn">Add Row</button>
+          <button class="delete-row-btn" id="deleteRowBtn">Delete Row</button>
+          <button class="download-btn" id="downloadBtn">Download Graph</button>
+        </div>
       </div>
     </div>
     <div class="lower graph-container">
       <canvas id="myChart"></canvas>
+      i
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
   <script src="/js/script.js"></script>
 </body>
 
