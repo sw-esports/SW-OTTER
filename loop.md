@@ -1,4 +1,6 @@
-### JavaScript Loop Practice: while, do-while, and for
+JavaScript Loop Practice: while, do-while, and for
+
+This document contains 15 loop-based JavaScript coding questions divided into while, do-while, and for loop categories. Each question is followed by a logic explanation and a sample example.
 
 
 ---
